@@ -1,0 +1,144 @@
+{
+    "final_space": true,
+    "console_title": true,
+    "console_title_style": "folder",
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "horizontal_offset": 0,
+            "vertical_offset": 0,
+            "segments": [
+                {
+                    "type": "os",
+				    "style": "diamond",
+                    "foreground": "#18354c",
+                    "background": "#ffc107",
+				    "leading_diamond": "\uE0B6",
+                    "trailing_diamond": "\uE0B4"
+                },
+                {
+                  "type": "battery",
+                  "style": "diamond",
+                  "foreground": "#193549",
+                  "background": "#ffeb3b",
+				  "leading_diamond": "<transparent,background>\uE0B4</>",
+				  "trailing_diamond": "",
+                  "properties": {
+                    "battery_icon": "",
+                    "discharging_icon": "\uE231 ",
+                    "charging_icon": "\uE234 ",
+                    "charged_icon": "\uE22F ",
+                    "color_background": true,
+                    "charged_color": "#4caf50",
+                    "charging_color": "#40c4ff",
+                    "discharging_color": "#ff5722",
+                    "postfix": "\uF295 ",
+                    "display_charging": true,
+                    "display_charged": true
+                  }
+                },
+				{
+					"type": "time",
+					"style": "diamond",
+					"foreground": "#ffc107",
+					"background": "#18354c",
+					"leading_diamond": "<transparent,background>\uE0B0</>",
+					"trailing_diamond": "",
+					"properties": {
+						"time_format": "15:04:05"
+					}
+				},
+                {
+                    "type": "path",
+                    "style": "diamond",
+                    "invert_powerline": false,
+                    "foreground": "#ffc107",
+                    "background": "#18354c",
+					"leading_diamond": "<transparent,background>\uE0B0</>",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "prefix": "  ",
+                        "style": "full"
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#193549",
+                    "background": "#fffb38",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "display_status": true,
+                        "display_stash_count": true,
+                        "display_upstream_icon": true
+                    }
+                },
+                {
+                  "type": "node",
+                  "style": "powerline",
+                  "powerline_symbol": "\uE0B0",
+                  "foreground": "#ffffff",
+                  "background": "#6CA35E",
+                  "properties": {
+                    "prefix": " \uE718 "
+                  }
+                },
+				{
+				  "type": "python",
+				  "style": "powerline",
+				  "powerline_symbol": "\uE0B0",
+				  "foreground": "#18354c",
+				  "background": "#ffc107",
+				  "properties": {
+					"prefix": " \uE235 "
+				  }
+				},
+                {
+                    "type": "root",
+                    "style": "powerline",
+                    "powerline_symbol": "",
+                    "invert_powerline": false,
+                    "foreground": "#ffffff",
+                    "background": "#ffff66",
+                    "leading_diamond": "",
+                    "trailing_diamond": "",
+                    "properties": null
+                },
+				//{
+				//  "type": "wifi",
+				//  "style": "diamond",
+				//  "background": "#8822ee",
+				//  "foreground": "#222222",
+				//  "background_templates": [
+				//	"{{ if (not .Connected) }}#FF1111{{ end }}",
+				//	"{{ if (lt .Signal 60) }}#DDDD11{{ else if (lt .Signal 90) }}#DD6611{{ else }}#11CC11{{ end }}"
+				//  ],
+				//  "leading_diamond": "<transparent,background>\uE0B0</>",
+                //  "trailing_diamond": "\uE0B0",
+				//  "properties": {
+				//	"template": "{{ if .Connected }}\uFAA8{{ else }}\uFAA9{{ end }} {{ .SSID }} {{ .Signal }}% {{ .ReceiveRate }}Mbps"
+				//  }
+				//},
+                {
+                    "type": "exit",
+					"style": "diamond",
+                    "foreground": "#ffffff",
+                    "background": "#2e9599",
+                    "leading_diamond": "<transparent,background>\uE0B0</>",
+                    "trailing_diamond": "",
+                    "properties": {
+                        "always_enabled": true,
+                        "color_background": true,
+                        "display_exit_code": false,
+                        "error_color": "#f1184c",
+                        "prefix": " "
+                    }
+                }
+            ]
+        }	
+    ]
+}
